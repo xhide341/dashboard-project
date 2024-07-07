@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.dashboard-section,
+.header-section,
+.content-section {
+    padding: 10px;
+}
+
+/* dashboard */
+.dashboard-section {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.dashboard-items {
+    display: grid;
+    grid-row: 2 / span 4;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 100px));
+}
+
+.logo {
+    display: inline-grid;
+    grid-template-columns: 20% 80%;
+}
+
+.dashboard-items .item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    row-gap: 200px;
+}
+
+/* header */
+.header-section {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-section {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+
+.search-section > .icon {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+input {
+    border-radius: 15px;
+    grid-column: 2 / 3;
+    min-height: 40px;
+}
+
+.header-account {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 40px 60px max-content;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-section {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    grid-template-columns: 100px 1fr;
+    grid-row: 1fr 1fr;
+    align-items: center;
+}
+
+.profile-section > .zen-logo {
+    grid-row: 1 / span 2;
+}
+
+.profile-section > span {
+    align-self: self-end;
+}
+
+.profile-section > .name {
+    align-self: self-start;
+}
+
+/* content */
+.content-section {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+}
+
