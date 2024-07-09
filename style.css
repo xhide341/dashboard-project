@@ -37,7 +37,7 @@ p, .trending-section span {
     grid-template-columns: 1fr 6fr;
     grid-template-rows: auto 1fr;
     height: 100vh;
-    position: relative;
+    position: absolute;
 }
 
 .dashboard-section,
@@ -54,7 +54,6 @@ p, .trending-section span {
     background-color: #0B2147;
     grid-template-rows: auto 1fr;
     padding: 20px;
-    position: relative;
 }
 
 .logo-section {
