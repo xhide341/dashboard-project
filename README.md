@@ -15,7 +15,7 @@ This project is about a simple dashboard website made by solely using CSS Grid. 
 
 ### Features
 
-Here is a short summary of what the website:
+Here is a short summary of the website:
 
 - Made only by using CSS Grid in each and every element.
 - The overall layout is achieved from the lesson's example image.
@@ -28,3 +28,6 @@ Here is a short summary of what the website:
 
 ## What I Learned
 
+I learned about the use-case of CSS Grid because I was able to understand its power and strength. By combining CSS Grid with CSS Flexbox on my projects, I will be able to maintain a responsive, consistent, and precise layouts. For me, this is important because I believe that good developers have a good understanding of the very fundamentals of building websites.
+
+After finishing this project, I am now confident in building good layouts by combining both content flow and content placement in my arsenal of tools for web development.

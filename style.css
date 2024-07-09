@@ -28,6 +28,10 @@ body {
     background-color: #f6f6f9;
 }
 
+p {
+    font-size: 1rem;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -68,6 +72,7 @@ body {
     width: min-content;
     height: min-content;
     color: #f6f6f9;
+    font-size: 2rem;
 }
 
 .dashboard-items {
@@ -163,8 +168,13 @@ input {
     grid-row: 1 / span 2;
 }
 
+.profile-section h1 {
+    font-size: 2rem;
+}
+
 .profile-section span {
     align-self: flex-end;
+    font-size: 1rem;
 }
 
 h1, h2, span {
