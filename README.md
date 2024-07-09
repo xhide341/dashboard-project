@@ -19,6 +19,7 @@ Here is a short summary of the website:
 
 - Made only by using CSS Grid in each and every element.
 - The overall layout is achieved from the lesson's example image.
+- Made responsive by using dynamic values such as rem and fr.
 - It consists of 2 rows and 2 columns by doing the following:
 
 ```
