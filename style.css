@@ -34,10 +34,9 @@ p, .trending-section span {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 250px 6fr;
     grid-template-rows: auto 1fr;
     height: 100vh;
-    position: absolute;
 }
 
 .dashboard-section,
@@ -54,6 +53,9 @@ p, .trending-section span {
     background-color: #0B2147;
     grid-template-rows: auto 1fr;
     padding: 20px;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
 }
 
 .logo-section {
@@ -108,7 +110,9 @@ p, .trending-section span {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     padding: 10px 20px 20px 20px;
     height: min-content;
-    position: relative;
+    left: 250px;
+    right: 0;
+    z-index: 1000;
 }
 
 .search-section {
@@ -213,6 +217,7 @@ h1, h2, span {
     grid-column: 2;
     grid-row: 2;
     grid-template-columns: 3fr 1fr;
+    overflow-y: auto;
 }
 
 .content-column-1 {
