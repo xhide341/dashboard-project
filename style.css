@@ -17,6 +17,7 @@
   }
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    text-size-adjust: none;
   }
   #root, #__next {
     isolation: isolate;
@@ -24,12 +25,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
     background-color: #f6f6f9;
 }
 
-p {
-    font-size: 1rem;
+p, .trending-section span {
+    font-size: .75rem;
 }
 
 .container {
@@ -37,6 +37,7 @@ p {
     grid-template-columns: 1fr 6fr;
     grid-template-rows: auto 1fr;
     height: 100vh;
+    position: relative;
 }
 
 .dashboard-section,
@@ -53,6 +54,7 @@ p {
     background-color: #0B2147;
     grid-template-rows: auto 1fr;
     padding: 20px;
+    position: relative;
 }
 
 .logo-section {
@@ -61,6 +63,7 @@ p {
     grid-template-columns: 1fr 4fr;
     margin-top: 20px;
     align-items: center;
+    gap: 10px;
 }
 
 .logo-section img {
@@ -72,7 +75,7 @@ p {
     width: min-content;
     height: min-content;
     color: #f6f6f9;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .dashboard-items {
@@ -91,7 +94,7 @@ p {
     justify-content: center;
     column-gap: 20px;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.100rem;
     color: #f6f6f9;
 }
 
@@ -106,6 +109,7 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     padding: 10px 20px 20px 20px;
     height: min-content;
+    position: relative;
 }
 
 .search-section {
@@ -169,7 +173,7 @@ input {
 }
 
 .profile-section h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 .profile-section span {
@@ -284,7 +288,7 @@ h1, h2, span {
 .trending-section {
     display: grid;
     background-color: white;
-    padding: 10px;
+    padding: 15px 10px 15px 10px;
     gap: 6px;
     border-radius: 8px;
     margin-top: 10px;
@@ -305,4 +309,5 @@ h1, h2, span {
 
 .trending-item .tag {
     font-weight: 700;
+    font-size: .9rem;
 }
